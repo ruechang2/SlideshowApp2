@@ -41,7 +41,7 @@
                                         <rect key="frame" x="144" y="0.0" width="66" height="30"/>
                                         <state key="normal" title="再生/停止"/>
                                         <connections>
-                                            <action selector="play1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ir8-yy-cWU"/>
+                                            <action selector="play1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zvn-Mp-0Xv"/>
                                         </connections>
                                     </button>
                                 </subviews>

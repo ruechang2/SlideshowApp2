@@ -49,8 +49,11 @@ class ViewController: UIViewController {
         
         let image = UIImage(named: "スクリーンショット 2019-01-29 20.56.50")
         imageView.image = image
-        
-        // タイマーを設定
+    }
+    
+    @IBAction func play1(_ sender: UIButton) {
+    
+    // タイマーを設定
         timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
     
     }
