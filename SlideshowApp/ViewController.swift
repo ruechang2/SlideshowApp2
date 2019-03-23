@@ -52,10 +52,20 @@ class ViewController: UIViewController {
     }
     
     @IBAction func play1(_ sender: UIButton) {
-    
+ 
     // タイマーを設定
+         if self.timer == nil {
         timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
-    
+         }else{
+        
+          
+            if self.timer != nil {
+                if self.timer != nil {
+                    self.timer!.invalidate()   // タイマーを停止する
+                    self.timer = nil          // startTimer() の timer == nil で判断するために、 timer = nil としておく
+                }
+        }
+    }
     }
     /// NSTimerによって、一定の間隔で呼び出される関数
   @objc  func updateTimer(_ timer: Timer) {
